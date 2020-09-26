@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600;700&display=swap');
+
+.Header {
+	width: 100vw;
+	height: 100vh;
+	max-height: 100vh;
+	overflow: hidden;
+	// font-family: 'Josefin Sans', sans-serif;
+
+	&--bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-image: url('../../assets/images/sky.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		background-attachment: fixed;
+	}
+
+	&--front {
+		position: absolute;
+		top: 0vh;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999;
+		background-image: url('../../assets/images/mountains3.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+
+	&--spinner1 {
+		border: 6px solid transparent;
+		border-top: 6px solid #ff0040;
+		border-radius: 50%;
+		animation: spin 2s linear infinite;
+		position: fixed;
+		z-index: 6;
+		width: 120px;
+		height: 120px;
+		top: 40%;
+		right: 25%;
+	}
+
+	&--spinner2 {
+		border: 10px solid transparent;
+		border-right: 10px solid #ff0040;
+		border-radius: 50%;
+		animation: spin 2s linear infinite;
+		position: fixed;
+		z-index: 7;
+		width: 280px;
+		height: 280px;
+		top: 40%;
+		right: 25%;
+	}
+
+	&--spinner3 {
+		border: 10px solid transparent;
+		border-bottom: 10px solid #ff0040;
+		// #ff0074;
+		border-radius: 50%;
+		animation: spin 2s linear infinite;
+		position: fixed;
+		z-index: 7;
+		width: 500px;
+		height: 500px;
+		top: 30%;
+		right: 25%;
+	}
+
+	&--sideLine {
+		width: 15px;
+		height: 400vh;
+		background-color: #ff0040;
+		z-index: 51;
+		position: absolute;
+		left: 0%;
+		top: 0;
+	}
+
+	&--timeLine {
+		width: 1px;
+		height: 400vh;
+		background-color: #fff;
+		z-index: 999999999;
+		position: absolute;
+		left: 10em;
+		top: 100vh;
+	}
+
+	&--timeDot-One {
+		width: 30px;
+		height: 30px;
+		transform: rotate(45deg);
+		background-color: #fff;
+		position: absolute;
+		left: 9em;
+		top: 120vh;
+		z-index: 999999999;
+	}
+
+	&--timeDot-Two {
+		width: 30px;
+		height: 30px;
+		transform: rotate(45deg);
+		background-color: #fff;
+		position: absolute;
+		left: 9em;
+		top: 220vh;
+		z-index: 999999999;
+	}
+
+	&--timeDot-Three {
+		width: 30px;
+		height: 30px;
+		transform: rotate(45deg);
+		background-color: #fff;
+		position: absolute;
+		left: 9em;
+		top: 320vh;
+		z-index: 999999999;
+	}
+
+	&--name1 {
+		position: fixed;
+		top: 10%;
+		left: 4rem;
+		width: 5%;
+		z-index: 2;
+		font-size: 10em;
+		text-transform: uppercase;
+		transform: translateX(100vw);
+		animation: name2 0.8s ease-in-out 1s forwards;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #ff0040;
+	}
+
+	&--name2 {
+		position: fixed;
+		top: 25%;
+		left: 4rem;
+		width: 25%;
+		z-index: 2;
+		font-size: 10em;
+		text-transform: uppercase;
+		animation: name1 0.8s ease-in-out 1.2s forwards;
+		transform: translateY(1000px);
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #ff0040;
+	}
+
+	&--subtext {
+		height: auto;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		position: fixed;
+		top: 25%;
+		left: 30em;
+		z-index: 2;
+
+		&--subtext-one {
+			font-size: 2em;
+			text-transform: uppercase;
+			transform: translateX(100vw);
+			animation: subtext 1s ease-in-out 1.5s forwards;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #fff;
+			padding: 0;
+			margin: 0;
+		}
+
+		&--subtext-two {
+			font-size: 2em;
+			text-transform: uppercase;
+			transform: translateX(100vw);
+			animation: subtext 1s ease-in-out 1.5s forwards;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #fff;
+			padding: 0;
+			margin: 0;
+		}
+
+		&--subtext-three {
+			font-size: 2em;
+			text-transform: uppercase;
+			transform: translateX(100vw);
+			animation: subtext 1s ease-in-out 1.5s forwards;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #fff;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+
+@keyframes name1 {
+	to {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes name2 {
+	to {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes subtext {
+	to {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}

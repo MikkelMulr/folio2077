@@ -1,0 +1,15 @@
+.Projects {
+	border: 1px solid white;
+	margin: 10em;
+	width: 100%;
+	height: 100%;
+
+	&--head {
+		font-size: 10em;
+		padding: 0;
+		margin: 0;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #ff0040;
+	}
+}

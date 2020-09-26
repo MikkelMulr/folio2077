@@ -1,38 +1,134 @@
 .App {
-  text-align: center;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #0b1218;
+	height: 100%;
+	width: 100%;
+	max-width: 100vw;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+	position: fixed;
+	top: 1.5em;
+	left: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 1fr 2fr;
+	grid-template-rows: 1fr;
+	gap: 0;
+	grid-template-areas: "menu links logo spacer socials";
+	width: 100vw;
+	height: 50px;
+	z-index: 999999999;
+	color: rgba(255, 255, 255, 0.767);
+	margin: 0 5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	grid-area: links;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-links .link {
+	transition: all 0.2s linear 0.15s;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-links .link:hover {
+	color: #ff0040;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-menu {
+	grid-area: menu;
+}
+
+.navbar-menu img {
+	height: 30px;
+}
+
+.navbar-logo {
+	grid-area: logo;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar-logo img {
+	height: 50px;
+}
+.navbar-spacer {
+	grid-area: spacer;
+}
+.navbar-socials {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	grid-area: socials;
+}
+
+.navbar-socials p {
+	padding: 0 1em;
+}
+
+.container {
+	height: 100%;
+	width: 100vw;
+	background: linear-gradient(180deg, rgba(4, 6, 8, 1) 0%, rgba(10, 16, 23, 1) 100%);
+	z-index: 50;
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 1px 1px;
+	grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding"
+		"timeline footer padding";
+
+	@media (min-width: 992px) {
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+}
+
+.timeline {
+	grid-area: timeline;
+}
+.padding {
+	grid-area: padding;
+}
+.about {
+	grid-area: about;
+}
+.projects {
+	grid-area: projects;
+}
+.contact {
+	grid-area: contact;
+}
+.footer {
+	grid-area: footer;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

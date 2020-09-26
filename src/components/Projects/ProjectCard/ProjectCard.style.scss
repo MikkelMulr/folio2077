@@ -1,0 +1,27 @@
+.ProjectCard {
+	border: 1px solid white;
+	height: 70px;
+
+	h1 {
+		color: #fff;
+		cursor: pointer;
+
+		&:hover {
+			color: #ff0040;
+		}
+	}
+}
+
+.ProjectCard-expanded {
+	border: 1px solid white;
+	height: 30vh;
+
+	h1 {
+		color: #fff;
+		cursor: pointer;
+
+		&:hover {
+			color: #ff0040;
+		}
+	}
+}
