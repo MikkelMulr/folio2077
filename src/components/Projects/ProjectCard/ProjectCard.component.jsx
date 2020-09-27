@@ -21,6 +21,7 @@ export default function ProjectCard({ details, view, expanded, close }) {
 		return (
 			<div className='ProjectCard-expanded'>
 				<h1 onClick={() => close()}>{details.title}</h1>
+				<p>{details.desc}</p>
 			</div>
 		);
 	}

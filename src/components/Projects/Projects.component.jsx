@@ -7,7 +7,19 @@ export default function Projects() {
 	const [ p2, setP2 ] = useState(false);
 	const [ p3, setP3 ] = useState(false);
 
-	const projects = [ { title: 'LakeRidge Health' }, { title: 'Bookr' }, { title: 'The Other One' } ];
+	const projects = [
+		{
+			title: 'Lakeridge Health',
+			desc:
+				'Application developed for Lakeridge Health as an interactive way for potential patients to have some common myths and misconceptions about clinical trials dispelled.'
+		},
+		{
+			title: 'Bookr',
+			desc:
+				'Full-stack application allowing user registration, custom event and guest-list creation and sending of invitions all from one platform.'
+		},
+		{ title: 'The Other One', desc: '' }
+	];
 
 	const expandP1 = () => {
 		setP1(!p1);
