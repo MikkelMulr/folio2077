@@ -90,8 +90,16 @@
 		background-color: #fff;
 		z-index: 999999999;
 		position: absolute;
-		left: 10em;
+		left: 10%;
 		top: 100vh;
+
+		@media (min-width: 992px) {
+			left: 3%;
+		}
+
+		@media (min-width: 768px) {
+			left: 1.5rem;
+		}
 	}
 
 	&--timeDot-One {
@@ -100,9 +108,17 @@
 		transform: rotate(45deg);
 		background-color: #fff;
 		position: absolute;
-		left: 9em;
-		top: 120vh;
+		left: calc(10% - 15px);
+		top: 115vh;
 		z-index: 999999999;
+
+		@media (min-width: 992px) {
+			left: calc(3% - 15px);
+		}
+
+		@media (min-width: 768px) {
+			left: calc(1.5rem - 15px);
+		}
 	}
 
 	&--timeDot-Two {
@@ -111,9 +127,16 @@
 		transform: rotate(45deg);
 		background-color: #fff;
 		position: absolute;
-		left: 9em;
-		top: 220vh;
+		left: calc(10% - 15px);
+		top: 215vh;
 		z-index: 999999999;
+		@media (min-width: 992px) {
+			left: calc(3% - 15px);
+		}
+
+		@media (min-width: 768px) {
+			left: calc(1.5rem - 15px);
+		}
 	}
 
 	&--timeDot-Three {
@@ -122,9 +145,16 @@
 		transform: rotate(45deg);
 		background-color: #fff;
 		position: absolute;
-		left: 9em;
-		top: 320vh;
+		left: calc(10% - 15px);
+		top: 315vh;
 		z-index: 999999999;
+		@media (min-width: 992px) {
+			left: calc(3% - 15px);
+		}
+
+		@media (min-width: 768px) {
+			left: calc(1.5rem - 15px);
+		}
 	}
 
 	&--name1 {
@@ -140,6 +170,14 @@
 		-webkit-text-fill-color: transparent;
 		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: #ff0040;
+
+		@media (min-width: 768px) {
+			left: 1rem;
+		}
+
+		@media (min-width: 992px) {
+			left: 4rem;
+		}
 	}
 
 	&--name2 {
@@ -155,6 +193,14 @@
 		-webkit-text-fill-color: transparent;
 		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: #ff0040;
+
+		@media (min-width: 768px) {
+			left: 1rem;
+		}
+
+		@media (min-width: 992px) {
+			left: 4rem;
+		}
 	}
 
 	&--subtext {
@@ -168,6 +214,15 @@
 		top: 25%;
 		left: 30em;
 		z-index: 2;
+		@media (min-width: 768px) {
+			left: 26em;
+			top: 26%;
+		}
+
+		@media (min-width: 992px) {
+			top: 25%;
+			left: 30em;
+		}
 
 		&--subtext-one {
 			font-size: 2em;

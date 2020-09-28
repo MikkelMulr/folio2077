@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Projects.style.scss';
 import ProjectCard from './ProjectCard/ProjectCard.component';
+import bookr from '../../assets/images/bookr.png';
+import lakebg from '../../assets/images/lakebg.png';
 
 export default function Projects() {
 	const [ p1, setP1 ] = useState(false);
@@ -11,12 +13,14 @@ export default function Projects() {
 		{
 			title: 'Lakeridge Health',
 			desc:
-				'Application developed for Lakeridge Health as an interactive way for potential patients to have some common myths and misconceptions about clinical trials dispelled.'
+				'Application developed for Lakeridge Health as an interactive way for potential patients to have some common myths and misconceptions about clinical trials dispelled.',
+			img: lakebg
 		},
 		{
 			title: 'Bookr',
 			desc:
-				'Full-stack application allowing user registration, custom event and guest-list creation and sending of invitions all from one platform.'
+				'Full-stack application allowing user registration, custom event and guest-list creation and sending of invitions all from one platform.',
+			img: bookr
 		},
 		{ title: 'The Other One', desc: '' }
 	];
