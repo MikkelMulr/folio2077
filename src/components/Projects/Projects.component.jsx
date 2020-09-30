@@ -57,7 +57,7 @@ export default function Projects() {
 			<h1 className='Projects--head'>Projects</h1>
 			<ProjectCard details={projects[0]} expanded={p1} view={expandP1} close={closeP1} />
 			<ProjectCard details={projects[1]} expanded={p2} view={expandP2} close={setP2} />
-			<ProjectCard details={projects[2]} expanded={p3} view={expandP3} close={setP3} />
+			{/* <ProjectCard details={projects[2]} expanded={p3} view={expandP3} close={setP3} /> */}
 		</div>
 	);
 }
