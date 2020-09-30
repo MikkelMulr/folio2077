@@ -3,6 +3,7 @@ import './Projects.style.scss';
 import ProjectCard from './ProjectCard/ProjectCard.component';
 import bookr from '../../assets/images/bookr.png';
 import lakebg from '../../assets/images/lakebg.png';
+import AVLN from '../../assets/images/AVLN.png';
 
 export default function Projects() {
 	const [ p1, setP1 ] = useState(false);
@@ -24,7 +25,13 @@ export default function Projects() {
 			img: bookr,
 			tools: [ 'react-original', 'javascript-plain', 'html5-plain', 'sass-original', 'nodejs-plain' ]
 		},
-		{ title: 'The Other One', desc: '' }
+		{
+			title: 'Avalon Resilient',
+			desc:
+				'A Materialize based home page for a fictional technology company, straight forward and clean through and through.',
+			img: AVLN,
+			tools: [ 'javascript-plain', 'html5-plain', 'css3-plain', 'npm-original-wordmark', 'nodejs-plain' ]
+		}
 	];
 
 	const expandP1 = () => {
@@ -57,7 +64,7 @@ export default function Projects() {
 			<h1 className='Projects--head'>Projects</h1>
 			<ProjectCard details={projects[0]} expanded={p1} view={expandP1} close={closeP1} />
 			<ProjectCard details={projects[1]} expanded={p2} view={expandP2} close={setP2} />
-			{/* <ProjectCard details={projects[2]} expanded={p3} view={expandP3} close={setP3} /> */}
+			<ProjectCard details={projects[2]} expanded={p3} view={expandP3} close={setP3} />
 		</div>
 	);
 }
