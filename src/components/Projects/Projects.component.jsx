@@ -14,13 +14,15 @@ export default function Projects() {
 			title: 'Lakeridge Health',
 			desc:
 				'Application developed for Lakeridge Health as an interactive way for potential patients to have some common myths and misconceptions about clinical trials dispelled.',
-			img: lakebg
+			img: lakebg,
+			tools: [ 'vuejs-plain', 'javascript-plain', 'html5-plain', 'sass-original', 'nodejs-plain' ]
 		},
 		{
 			title: 'Bookr',
 			desc:
 				'Full-stack application allowing user registration, custom event and guest-list creation and sending of invitions all from one platform.',
-			img: bookr
+			img: bookr,
+			tools: [ 'react-original', 'javascript-plain', 'html5-plain', 'sass-original', 'nodejs-plain' ]
 		},
 		{ title: 'The Other One', desc: '' }
 	];

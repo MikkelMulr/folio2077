@@ -18,13 +18,21 @@
 		width: 90%;
 	}
 
+	@media (max-width: 425px) {
+		width: calc(100vw - 50px);
+	}
+
 	&--head {
-		font-size: 10em;
+		font-size: 10vh;
 		padding: 0;
 		padding-bottom: 1rem;
 		margin: 0;
 		-webkit-text-fill-color: transparent;
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: #ff0040;
+
+		@media (max-width: 1200px) {
+			font-size: 12vh;
+		}
 	}
 }

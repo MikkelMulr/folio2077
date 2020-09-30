@@ -4,7 +4,7 @@ import './ProjectCard.style.scss';
 export default function ProjectCard({ details, view, expanded, close }) {
 	useEffect(
 		() => {
-			console.log(details.img);
+			console.log(':)');
 		},
 		[ expanded ]
 	);
@@ -19,15 +19,21 @@ export default function ProjectCard({ details, view, expanded, close }) {
 		return (
 			<div className='ProjectCard-expanded'>
 				<div className='ProjectCard-expanded--left'>
-					<h1 onClick={() => close()}>{details.title}</h1>
+					<h1>
+						<span onClick={() => close()}>{details.title}</span> <i class='fas fa-external-link-alt' />{' '}
+						<i class='fas fa-code' />
+					</h1>
 					<p>{details.desc}</p>
+					<div className='ProjectCard-expanded--left--icons'>
+						<i className={`devicon-${details.tools[0]}`} />
+						<i className={`devicon-${details.tools[1]}`} />
+						<i className={`devicon-${details.tools[2]}`} />
+						<i className={`devicon-${details.tools[3]}`} />
+						<i className={`devicon-${details.tools[4]}`} />
+					</div>
 				</div>
 				<div className='ProjectCard-expanded--right'>
 					<div className='ProjectCard-expanded--right--img' style={{ backgroundImage: `url(${details.img})` }} />
-					<div className='ProjectCard-expanded--right--btns'>
-						<button>Visit</button>
-						<button>Github</button>
-					</div>
 				</div>
 			</div>
 		);

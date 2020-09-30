@@ -4,9 +4,7 @@ import './Contact.style.scss';
 export default function Contact() {
 	return (
 		<div className='Contact'>
-			<div className='Contact--head'>
-				<h1>Contact</h1>
-			</div>
+			<h2>Contact</h2>
 			<div className='Contact--links'>
 				<a href='#'>Linkedin</a>
 				<a href='#'>Github</a>
