@@ -6,10 +6,14 @@ export default function Contact() {
 		<div className='Contact'>
 			<h2>Contact</h2>
 			<div className='Contact--links'>
-				<a href='#'>Linkedin</a>
-				<a href='#'>Github</a>
-				<a href='#'>Email</a>
-				<a href='#'>Resume</a>
+				<a href='https://www.linkedin.com/in/michael-mueller-10a092161/' target='_blank' rel='noopener noreferrer'>
+					Linkedin
+				</a>
+				<a href='https://github.com/MikkelMulr'>Github</a>
+				<a href='mailto:muellerm.dev@gmail.com?subject=portfolio contact' rel='noopener noreferrer'>
+					Email
+				</a>
+				<a href='https://www.linkedin.com/in/michael-mueller-10a092161/'>Resume</a>
 			</div>
 		</div>
 	);
