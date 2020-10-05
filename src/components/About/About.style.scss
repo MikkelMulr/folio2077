@@ -38,7 +38,7 @@
 		border-right: 15px solid #ff0040;
 		display: flex;
 		flex-direction: column;
-		width: 80%;
+		width: 100%;
 		gap: 0.25em 0.25em;
 	}
 
@@ -80,6 +80,10 @@
 		grid-area: left;
 		font-size: 1rem;
 
+		p {
+			padding-bottom: 5px;
+		}
+
 		@media (max-width: 1200px) {
 			height: 35vh;
 		}
@@ -91,6 +95,7 @@
 		@media (max-width: 425px) {
 			width: 80vw;
 			font-size: 0.85rem;
+			height: 40vh;
 		}
 	}
 
@@ -116,6 +121,7 @@
 		@media (max-width: 425px) {
 			width: 80vw;
 			font-size: 0.85rem;
+			height: 30vh;
 		}
 
 		h3 {

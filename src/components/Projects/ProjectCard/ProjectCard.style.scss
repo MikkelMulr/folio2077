@@ -60,6 +60,10 @@
 			margin-top: 0;
 			padding: 0;
 		}
+
+		@media (max-width: 425px) {
+			font-size: 0.8rem;
+		}
 	}
 
 	&--left {
@@ -81,6 +85,9 @@
 			width: 50%;
 
 			@media (max-width: 425px) {
+				height: 30%;
+				align-items: center;
+				justify-content: space-between;
 				width: 100%;
 			}
 

@@ -20,6 +20,10 @@
 		width: 90%;
 	}
 
+	@media (max-width: 425px) {
+		width: calc(100vw - 10px);
+	}
+
 	h2 {
 		font-size: 13vh;
 		-webkit-text-fill-color: transparent;
