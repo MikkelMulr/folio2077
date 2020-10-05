@@ -89,15 +89,9 @@
 	z-index: 50;
 	display: grid;
 	grid-template-columns: 1fr 4fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 	gap: 1px 1px;
-	grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding"
-		"timeline footer padding";
-
-	@media (max-width: 992px) {
-		grid-template-columns: 1fr 4fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
-	}
+	grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding";
 }
 
 section {
@@ -209,29 +203,6 @@ section {
 	padding: 0 1em;
 }
 
-.container {
-	height: 100%;
-	width: 100vw;
-	background: linear-gradient(180deg, rgba(4, 6, 8, 1) 0%, rgba(10, 16, 23, 1) 100%);
-	z-index: 50;
-	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	gap: 1px 1px;
-	grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding"
-		"timeline footer padding";
-}
-
-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	width: 100%;
-	height: 100vh;
-	color: #fff;
-}
-
 .timeline {
 	grid-area: timeline;
 }
@@ -254,9 +225,8 @@ section {
 @media (max-width: 1199.98px) {
 	.container {
 		grid-template-columns: 0.5fr 6fr 0.5fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
-		grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding"
-			"timeline footer padding";
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding";
 	}
 
 	section {
@@ -290,9 +260,8 @@ section {
 @media (max-width: 992px) {
 	.container {
 		grid-template-columns: 1fr 4fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
-		grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding"
-			"timeline footer padding";
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding";
 	}
 
 	section {
@@ -325,10 +294,9 @@ section {
 @media (max-width: 768px) {
 	.container {
 		grid-template-columns: 0.5fr 6fr 0.5fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 		gap: 0px 0px;
-		grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding"
-			"timeline footer padding";
+		grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding";
 	}
 
 	section {
@@ -373,10 +341,9 @@ section {
 @media (max-width: 425px) {
 	.container {
 		grid-template-columns: 0.5fr 6fr 0.5fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 		gap: 0px 0px;
-		grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding"
-			"timeline footer padding";
+		grid-template-areas: "timeline about padding" "timeline projects padding" "timeline contact padding";
 	}
 
 	section {

@@ -20,8 +20,13 @@ export default function ProjectCard({ details, view, expanded, close }) {
 			<div className='ProjectCard-expanded'>
 				<div className='ProjectCard-expanded--left'>
 					<h1>
-						<span onClick={() => close()}>{details.title}</span> <i class='fas fa-external-link-alt' />{' '}
-						<i class='fas fa-code' />
+						<span onClick={() => close()}>{details.title}</span>{' '}
+						<a href={details.siteLink} target='_blank' rel='noopener noreferrer'>
+							<i class='fas fa-external-link-alt' />
+						</a>{' '}
+						<a href={details.gitLink} target='_blank' rel='noopener noreferrer'>
+							<i class='fas fa-code' />
+						</a>
 					</h1>
 					<p>{details.desc}</p>
 					<div className='ProjectCard-expanded--left--icons'>

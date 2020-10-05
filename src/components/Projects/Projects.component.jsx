@@ -16,21 +16,27 @@ export default function Projects() {
 			desc:
 				'Application developed for Lakeridge Health as an interactive way for potential patients to have some common myths and misconceptions about clinical trials dispelled.',
 			img: lakebg,
-			tools: [ 'vuejs-plain', 'javascript-plain', 'html5-plain', 'sass-original', 'nodejs-plain' ]
+			tools: [ 'vuejs-plain', 'javascript-plain', 'html5-plain', 'sass-original', 'nodejs-plain' ],
+			siteLink: 'https://lakeridgemyths.netlify.app/',
+			gitLink: 'https://github.com/MikkelMulr/lakeridge'
 		},
 		{
 			title: 'Bookr',
 			desc:
 				'Full-stack application allowing user registration, custom event and guest-list creation and sending of invitions all from one platform.',
 			img: bookr,
-			tools: [ 'react-original', 'javascript-plain', 'html5-plain', 'sass-original', 'nodejs-plain' ]
+			tools: [ 'react-original', 'javascript-plain', 'html5-plain', 'sass-original', 'nodejs-plain' ],
+			siteLink: '',
+			gitLink: 'https://github.com/MikkelMulr/bookr'
 		},
 		{
 			title: 'Avalon Resilient',
 			desc:
 				'A Materialize based home page for a fictional technology company, straight forward and clean through and through.',
 			img: AVLN,
-			tools: [ 'javascript-plain', 'html5-plain', 'css3-plain', 'npm-original-wordmark', 'nodejs-plain' ]
+			tools: [ 'javascript-plain', 'html5-plain', 'css3-plain', 'npm-original-wordmark', 'nodejs-plain' ],
+			siteLink: 'https://app.netlify.com/sites/sharp-mcnulty-49a2eb/overview',
+			gitLink: 'https://github.com/MikkelMulr/avln_res'
 		}
 	];
 

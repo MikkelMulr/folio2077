@@ -63,6 +63,9 @@
 				padding-left: 5rem;
 				border-bottom: 1px solid #ff0040;
 			}
+			@media (max-width: 425px) {
+				font-size: 8vh;
+			}
 		}
 	}
 }
