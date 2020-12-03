@@ -12,12 +12,13 @@ export default function About() {
 				<div className='About--bottom-left'>
 					<p>
 						I come from a background in art, which has given me a deep appreciation for good design and knowing when
-						things work and simply don't, a straight forward approach based on years of experience.
+						things work and simply don't, then iterating until it locks in; a straight forward approach based on years
+						of experience.
 					</p>
 					<p>
-						Choosing to leave commercially working as an artist because I wanted to get involved in something bigger and
-						challenging in new ways. Programming was something I've tinkered with for many years, eventually diving into
-						webdev just became the thing that made sense, so here we are.
+						Choosing to leave commercially working as an illustrator, was a decision I made because I wanted to be
+						involved in something bigger and challenging in new ways. Programming was something I've tinkered with for
+						many years, diving into webdev just became the thing that made sense, so here we are.
 					</p>
 				</div>
 			</Slide>

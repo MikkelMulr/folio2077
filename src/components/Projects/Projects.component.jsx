@@ -35,7 +35,7 @@ export default function Projects() {
 				'A Materialize based home page for a fictional technology company, straight forward and clean through and through.',
 			img: AVLN,
 			tools: [ 'javascript-plain', 'html5-plain', 'css3-plain', 'npm-original-wordmark', 'nodejs-plain' ],
-			siteLink: 'https://app.netlify.com/sites/sharp-mcnulty-49a2eb/overview',
+			siteLink: 'https://avalonresilient.com/',
 			gitLink: 'https://github.com/MikkelMulr/avln_res'
 		}
 	];
